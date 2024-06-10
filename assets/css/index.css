@@ -1,0 +1,187 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/assets/font/Quicksand-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/assets/font/Quicksand-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/assets/font/Quicksand-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/assets/font/Quicksand-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Quicksand';
+}
+
+p, h1, h2, h3, h4, h5, h6, a {
+    margin: 0;
+}
+
+p {
+    color: #FFFFFF; 
+    font-size: 16px;
+}
+
+a {
+    color: #FFFFFF; 
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.button {
+    background: #FFD645;
+    color: #000000;
+    padding: 20px 60px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+section#login {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(200.42% 361.22% at -12.22% 266.79%, #6601E8 18.91%, #00002C 74.8%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+section#login #container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+section#login #container #form-container {
+    width: 38.8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+section#login #container #form-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.form-control {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form-control label {
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.form-control .otp-field {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.form-control input {
+    width: -webkit-fill-available;
+    background: #FFFFFF;
+    text-align: left;
+    color: #000000;
+    font-size: 1.5rem;
+    line-height: 17px;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 24px 30px;
+    outline: none !important;
+    border: none !important;
+}
+
+.form-control .otp-field input {
+    width: calc(100% / 6 - 5px);
+    padding: 24px 34px;
+}
+
+
+section#login #container #form-container #links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #FFFFFF;
+}
+
+section#login #container #illustration {
+    width: 61.2%;
+    height: 100%;
+    background-image: url("/assets/images/bank-login-illustration.png");
+    background-position: center;
+    background-size: cover;
+}
+
+section#netbanking-dashboard {
+    width: 100%;
+    height: calc(100vh - 120px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+section#netbanking-dashboard #sidebar {
+    width: 23.4%;
+    border-right: 1px solid #E6E6E6;
+    background: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+}
+
+section#netbanking-dashboard #sidebar .link {
+    padding: 16px 48px;
+    border-bottom: 1px solid #DCDCDC;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+section#netbanking-dashboard #sidebar .link.active {
+    background: #FFD645;
+    opacity: 1;
+}
+
+
+section#netbanking-dashboard #main {
+    width: 76.6%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
