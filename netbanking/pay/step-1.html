@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/assets/css/index.css" />
 </head>
 <body>
-    <section style="height: 120px; overflow: hidden;">
+    <section style="height: 120px; overflow: hidden; background: #060137;">
         <img width="100%" height="auto" src="/assets/images/dashboard-header.svg" alt="dashboard-header" />
     </section>
     <section id="netbanking-dashboard">
@@ -30,7 +30,29 @@
         </div>
         <div id="main">
             <div>
-                <img width="100%" height="auto" src="/assets/images/pay/step-1.svg" alt="step-1" />
+                <!-- <img width="100%" height="auto" src="/assets/images/pay/step-1.svg" alt="step-1" /> -->
+                <div style="width: -webkit-fill-available; display: flex; flex-direction: column; padding: 48px; ">
+                    <div style="width: -webkit-fill-available; padding: 16px 48px; display: flex; flex-direction: row; justify-content: space-between; border-bottom: 1px solid #DCDCDC; border-top: 1px solid #DCDCDC;">
+                        <p style="color: #000; font-size: 1.5rem;">From Account:</p>
+                        <p style="color: #000; font-size: 1.5rem;">XXXXXXXXXXXXXXXX</p>
+                    </div>
+                    <div style="width: -webkit-fill-available; padding: 7.5px 48px; display: flex; flex-direction: row; align-items: center; justify-content: space-between; border-bottom: 1px solid #DCDCDC; border-top: 1px solid #DCDCDC;">
+                        <p style="color: #000; font-size: 1.5rem;">Beneficiary:</p>
+                        <input type="text" class="pay-details" />
+                    </div>
+                    <div style="width: -webkit-fill-available; padding: 7.5px 48px; display: flex; flex-direction: row; align-items: center; justify-content: space-between; border-bottom: 1px solid #DCDCDC; border-top: 1px solid #DCDCDC;">
+                        <p style="color: #000; font-size: 1.5rem;">Beneficiary IFSC Code::</p>
+                        <input type="text" class="pay-details" />
+                    </div>
+                    <div style="width: -webkit-fill-available; padding: 7.5px 48px; display: flex; flex-direction: row; align-items: center; justify-content: space-between; border-bottom: 1px solid #DCDCDC; border-top: 1px solid #DCDCDC;">
+                        <p style="color: #000; font-size: 1.5rem;">Beneficiary Account Number::</p>
+                        <input type="text" class="pay-details" />
+                    </div>
+                    <div style="width: -webkit-fill-available; padding: 7.5px 48px; display: flex; flex-direction: row; align-items: center; justify-content: space-between; border-bottom: 1px solid #DCDCDC; border-top: 1px solid #DCDCDC;">
+                        <p style="color: #000; font-size: 1.5rem;">Transfer Amount:</p>
+                        <input type="text" class="pay-details" />
+                    </div>
+                </div>
             </div>
             <div style="width: auto; padding: 48px; display: flex; justify-content: flex-end;">
                 <a href="/netbanking/pay/step-2.html" class="button">Next</a>

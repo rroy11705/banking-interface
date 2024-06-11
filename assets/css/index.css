@@ -1,6 +1,7 @@
 html, body {
     margin: 0px;
     padding: 0px;
+    background: #F9F9F9;
 }
 
 @font-face {
@@ -184,4 +185,18 @@ section#netbanking-dashboard #main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+
+input.pay-details {
+    color: #000;
+    font-size: 1.5rem;
+    width: 210px;
+    border: none;
+    background: #E9E9E9;
+    border-radius: 8px;
+    padding: 12px;
+}
+editor-squiggler {
+    display: none;
 }
